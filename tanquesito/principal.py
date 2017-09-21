@@ -41,7 +41,6 @@ def game():
     
     while True:
         fuente = pygame.font.Font(None,30)
-        (""")texto_puntos = fuente.render("Puntos: "+str(heroe.puntos),1,(0,0,0))(""")
         texto_vida = fuente.render("Vida: "+str(heroe.vida),1,(0,0,0))
         
         heroe.update()
@@ -62,7 +61,6 @@ def game():
         screen.blit(background_image, (0,0))
         screen.blit(heroe.image, heroe.rect)
         screen.blit(texto_vida,(400,620))
-        (""")screen.blit(texto_puntos,(100,620))(""")
         for n in villano:
             screen.blit(n.image, n.rect)
         pygame.display.update()

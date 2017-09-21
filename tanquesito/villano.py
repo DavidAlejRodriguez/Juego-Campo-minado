@@ -15,9 +15,5 @@ class Villano(Sprite):
 	def update(self):
 		if self.dir == "b":
 			self.rect.y += self.velocidad
-		(""")elif self.dir == "b":
-			self.rect.y -= self.velocidad
-		if self.rect.y>=0:
-			self.dir="b"(""")
-		if self.rect.y<=608:
+		if self.rect.y <=608:
 			self.dir="b"
